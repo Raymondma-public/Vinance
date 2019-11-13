@@ -3,6 +3,8 @@ package com.ma.raymond.vinance.model;
 import java.time.LocalDate;
 import java.time.Period;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 public class FRA {
     private double notional;
     private LocalDate fromDate;
@@ -16,13 +18,22 @@ public class FRA {
         this.notional = notional;
         this.fromDate = fromDate;
         this.toDate = toDate;
-        this.days = Period.between(fromDate,toDate).getDays();
+        this.days = DAYS.between(fromDate,toDate)+1;
         this.year = dayCount.base;
         this.dayCount = dayCount;
         this.fixedRate = fixedRate;
+        System.out.println(days+" Days");
+        if(days<=0){
+            throw new IllegalArgumentException("Date range <= 0 days");
+        }
     }
 
     public double getSettlmentAmt(double floatingRate){
-        return 0.0;
+        System.out.println(notional+" "+ fixedRate+" "+floatingRate+" "+days+" "+year);
+        double top=notional*(fixedRate-floatingRate)*days/(double)year;
+        double bottom=(1+floatingRate*days/(double)year);
+        System.out.println(top);
+        System.out.println(bottom);
+        return top/bottom;
     }
 }
