@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ma.raymond.vinance.utils.TestSimpleArthmetic" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-14T02:50:29" hostname="DESKTOP-5JI6M98" time="0.001">
+  <properties/>
+  <testcase name="testNPV" classname="com.ma.raymond.vinance.utils.TestSimpleArthmetic" time="0.001"/>
+  <system-out><![CDATA[-10000.0
+-8148.148148148148
+-6862.139917695473
+-4480.643194634964
+-1687.5297540084416
+1715.386231160323
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

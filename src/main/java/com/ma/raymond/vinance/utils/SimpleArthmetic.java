@@ -9,13 +9,18 @@ public class SimpleArthmetic {
         int year=0;
         for(int i=0;i<cashflow.length;i++){
             year=i;
-
             npv+=cashflow[i]/(Math.pow(1+fixedRate,year));
             System.out.println(npv);
         }
         return npv;
     }
 
+    /***
+     *
+     * https://en.wikipedia.org/wiki/Brent%27s_method
+     * @param cashflow
+     * @return Internal Rate of Return
+     */
     public static double irr(double[] cashflow){
         return 0;
     }

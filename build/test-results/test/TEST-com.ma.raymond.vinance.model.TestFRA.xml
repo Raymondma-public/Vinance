@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ma.raymond.vinance.model.TestFRA" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-14T02:50:29" hostname="DESKTOP-5JI6M98" time="0.006">
+  <properties/>
+  <testcase name="testSettlment" classname="com.ma.raymond.vinance.model.TestFRA" time="0.005"/>
+  <testcase name="testSettlment_ExpectIllegalArgument" classname="com.ma.raymond.vinance.model.TestFRA" time="0.001"/>
+  <system-out><![CDATA[92 Days
+100.0 0.1285 0.115 92 365
+0.34027397260273967
+1.028986301369863
+-273 Days
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
